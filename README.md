@@ -13,11 +13,11 @@ Our project aims to develop a comprehensive restaurant management app inspired b
 
 ## Front-End
 
-https://github.com/elian-cheng/restio.git
+https://github.com/elian-cheng/restio/tree/front
 
 ## Back-End
 
-https://github.com/elian-cheng/restio.git
+https://github.com/elian-cheng/restio/tree/back
 
 ## Install instructions:
 
@@ -50,3 +50,16 @@ https://github.com/elian-cheng/restio.git
 - Redux, Redux Toolkit
 - Node.js, Node Express
 - Mongoose, MongoDB
+
+### Deploy
+1. Front - https://restio-front.netlify.app/
+2. Back - https://restio-server.onrender.com/
+3. Documentation - https://restio-server.onrender.com/api-docs/
+
+### Login info for testing (restaurant personnel):
+1) admin - minerva@gmail.com, 54321Qwe
+2) cook - hagrid@gmail.com, 54321Qwe
+3) waiter - dobbi@gmail.com, 54321Qwe
+
+### Testing customer view: 
+Restaurant table link (usually scanned via QR code) - https://restio-front.netlify.app/64c9f7904626278155af5599/tables/64d60026d5749542294474bd
