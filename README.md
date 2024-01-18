@@ -48,3 +48,6 @@ https://github.com/ets-ninja/et-back-23
 - Redux, Redux Toolkit
 - Node.js, Node Express
 - Mongoose, MongoDB
+
+## To see the swagger documentation
+Go to http://localhost:3000/api-docs
