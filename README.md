@@ -13,30 +13,32 @@ Our project aims to develop a comprehensive restaurant management app inspired b
 
 ## Front-End
 
-https://github.com/ets-ninja/et-front-23
+https://github.com/elian-cheng/restio/tree/front
 
 ## Back-End
 
-https://github.com/ets-ninja/et-back-23
+https://github.com/elian-cheng/restio/tree/back
 
 ## Install instructions:
 
 ### Front-End:
 
 ```bash
-1. git clone https://github.com/ets-ninja/et-front-23.git
-2. cd et-front-23
-3. npm i
-4. npm run start
+1. git clone https://github.com/elian-cheng/restio.git
+2. cd restio
+3. git checkout front
+4. npm i
+5. npm run start
 ```
 
 ### Back-End:
 
 ```bash
-1. git clone https://github.com/ets-ninja/et-back-23.git
-2. cd et-back-23
-3. npm i
-4. npm run start
+1. git clone https://github.com/elian-cheng/restio.git
+2. cd restio
+3. git checkout back
+4. npm i
+5. npm run start
 ```
 
 ### Used technologies
@@ -48,3 +50,16 @@ https://github.com/ets-ninja/et-back-23
 - Redux, Redux Toolkit
 - Node.js, Node Express
 - Mongoose, MongoDB
+
+### Deploy
+1. Front - https://restio-front.netlify.app/
+2. Back - https://restio-server.onrender.com/
+3. Documentation - https://restio-server.onrender.com/api-docs/
+
+### Login info for testing (restaurant personnel):
+1) admin - minerva@gmail.com, 54321Qwe
+2) cook - hagrid@gmail.com, 54321Qwe
+3) waiter - dobbi@gmail.com, 54321Qwe
+
+### Testing customer view: 
+Restaurant table link (usually scanned via QR code) - https://restio-front.netlify.app/64c9f7904626278155af5599/tables/64d60026d5749542294474bd
