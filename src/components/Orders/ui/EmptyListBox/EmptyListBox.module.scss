@@ -1,0 +1,15 @@
+.box {
+  display: grid;
+  justify-content: center;
+  gap: 15px;
+}
+
+.icon {
+  margin-left: auto;
+  margin-right: auto;
+  color: var(--color-primary);
+}
+
+.text {
+  color: var(--color-blue-dark);
+}

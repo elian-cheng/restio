@@ -1,0 +1,113 @@
+.box {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-top: 20px;
+  color: var(--color-blue-dark);
+  padding: 10px;
+  border-radius: 10px;
+  background-color: var(--color-white);
+  height: 100%;
+  min-height: 350px;
+  overflow-y: hidden;
+  overflow-x: auto;
+}
+
+.text {
+  font-size: 14px;
+  @media screen and (min-width: 850px) {
+    font-size: 16px;
+  }
+}
+
+.table {
+  border: var(--border-primary);
+  text-align: center;
+  border-collapse: collapse;
+}
+
+.calendar {
+  position: absolute;
+  z-index: 10;
+  top: 40px;
+}
+
+.th {
+  text-align: center;
+  width: 150px;
+  max-width: 200px;
+  position: relative;
+  border-bottom: var(--border-primary);
+  background: var(--color-bg-gray);
+  border-right: var(--border-primary);
+  padding: 10px;
+  font-size: 10px;
+
+  @media screen and (min-width: 1191px) {
+    font-size: 14px;
+  }
+
+  &:first-child {
+    width: 30px;
+  }
+
+  &:nth-child(2) {
+    width: 50px;
+  }
+}
+
+.td {
+  text-align: center;
+  font-size: 16px;
+  border-right: var(--border-primary);
+  padding: 5px;
+  border-bottom: var(--border-primary);
+}
+
+.tr {
+  border-bottom: none;
+}
+
+.loader {
+  width: 30px;
+}
+
+.span {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+  font-size: 12px;
+  @media screen and (min-width: 1191px) {
+    font-size: 14px;
+  }
+}
+.emptyBox {
+  display: grid;
+  gap: 10px;
+  justify-content: center;
+  align-items: center;
+}
+
+.icon {
+  margin-left: auto;
+  margin-right: auto;
+  color: var(--color-primary);
+}
+
+.calendarBox {
+  position: relative;
+}
+
+.calendarValue {
+  color: var(--color-primary);
+  position: absolute;
+  top: 60%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  pointer-events: none;
+}
+
+.dateIcon {
+  color: var(--color-primary);
+}

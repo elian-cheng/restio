@@ -1,0 +1,88 @@
+.main {
+  width: 100%;
+  padding: 40px 0;
+}
+.wrapper {
+  padding: 1rem;
+  display: flex;
+
+  margin-bottom: 20px;
+  margin-top: -20px;
+}
+.list {
+  width: 100%;
+  margin: 0 auto;
+  padding: 40px 10px;
+  display: flex;
+  flex-wrap: wrap;
+  row-gap: 60px;
+  column-gap: 20px;
+
+  &__item {
+    flex-basis: 100%;
+    @media screen and (min-width: 479.98px) {
+      flex-basis: calc((100% - 20px) / 2);
+    }
+
+    @media screen and (min-width: 991.98px) {
+      flex-basis: calc((100% - 40px) / 3);
+    }
+  }
+}
+.button {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+.cart-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  position: -webkit-sticky; /* Safari */
+  position: sticky;
+  width: 240px;
+
+  bottom: 10px;
+
+  border-radius: 12px;
+  padding: 0.8rem 1.5rem;
+  font-weight: var(--font-semi-bold);
+  color: var(--color-blue-dark);
+  background-color: var(--color-green-transparent);
+}
+.aiaWrapper {
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  z-index: 1000; /* Make sure it's above other content */
+
+  @media (max-width: 768px) {
+    bottom: 60px;
+    right: 20px;
+  }
+}
+
+/* Styles for the circular button */
+.button-circle {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 60px;
+  height: 60px;
+  background-color: var(--color-green-transparent);
+  color: white;
+  border-radius: 50%;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+  transition: 2s;
+
+  &:hover {
+    background-color: var(--color-primary-hover);
+  }
+
+  @media (max-width: 768px) {
+    width: 50px;
+    height: 50px;
+  }
+}

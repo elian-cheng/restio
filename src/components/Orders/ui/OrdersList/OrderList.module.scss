@@ -1,0 +1,23 @@
+.list {
+  height: 100%;
+  min-height: 250px;
+  display: grid;
+  justify-content: center;
+  grid-template-columns: auto;
+  gap: 18px;
+
+  @media screen and (min-width: 767.98px) {
+    grid-template-columns: auto auto;
+  }
+  @media screen and (min-width: 1200px) {
+    grid-template-columns: auto auto auto;
+  }
+}
+
+.btn {
+  height: 40px;
+}
+
+.text {
+  color: var(--color-blue-dark);
+}

@@ -1,0 +1,142 @@
+.personnel-container {
+  padding: 2rem 15px;
+  transition: 1s;
+
+  @media screen and (min-width: 1200px) {
+    padding: 1rem 100px;
+  }
+}
+
+.menu_wrapper {
+  display: grid;
+  grid-template-columns: repeat(
+    auto-fill,
+    minmax(290px, 1fr)
+  ); /* Adjust the minmax values as needed */
+  gap: 20px; /* Gap between cards */
+  //   grid-template-rows: auto;
+  width: 100%;
+  padding: 1.5rem 0;
+  transition: 1s;
+
+  @media screen and (max-width: 640px) {
+    margin: 0 auto;
+    grid-template-columns: 1fr; /* For mobile screens, only one card per row */
+  }
+
+  &.outlined {
+    padding: 1.5rem 0;
+    border: solid gray 1px;
+    border-radius: 50px;
+  }
+}
+
+.card_wrapper {
+  transition: 1s;
+  width: 100%;
+  flex-grow: 1;
+  height: 100%;
+}
+
+.divider {
+  border-top: 8px solid var(--color-primary);
+  border-radius: 5px;
+  margin-top: 0.4rem;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); // Adding a cool shadow
+}
+
+.dish {
+  opacity: 50%;
+}
+
+.employee_name {
+  font-weight: bolder;
+  text-align: center;
+  font-size: 1.2rem;
+  margin-bottom: 0.5rem;
+}
+
+.employee_subinfo {
+  color: var(--color-gray-600);
+  font-size: 0.9rem;
+}
+
+.input__section {
+  padding: 30px 0 10px;
+  position: relative;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-wrap: wrap;
+
+  @media screen and (min-width: 320px) and (max-width: 767.98px) {
+    gap: 10px;
+  }
+
+  @media screen and (min-width: 768px) {
+    flex-wrap: nowrap;
+  }
+}
+
+.search__section {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  width: 100%;
+  flex-wrap: wrap;
+
+  @media screen and (min-width: 426px) {
+    justify-content: flex-end;
+  }
+
+  @media screen and (min-width: 768px) {
+    flex-wrap: nowrap;
+    gap: 10px;
+    justify-content: flex-start;
+  }
+
+  @media screen and (min-width: 1200px) {
+    gap: 10px;
+  }
+}
+
+.input__content {
+  position: relative;
+  display: flex;
+  gap: 10px;
+
+  @media screen and (max-width: 767px) {
+    width: 100%;
+  }
+}
+
+.input {
+  min-width: 255px;
+  width: calc(100vw - 65px);
+  padding: 10px;
+
+  border-radius: 5px;
+
+  border: 1px solid var(--color-secondary);
+
+  @media screen and (min-width: 768px) {
+    width: calc(100vw - 500px);
+    margin-right: 10px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    width: 600px;
+  }
+}
+
+.addMore__section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.search__searchBtn {
+  position: absolute;
+  top: 15%;
+  right: 40px;
+}

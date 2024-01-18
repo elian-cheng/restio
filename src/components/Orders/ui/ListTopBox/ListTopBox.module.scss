@@ -1,0 +1,65 @@
+.box {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+
+  @media screen and (min-width: 700px) {
+    gap: 20px;
+  }
+}
+
+.btn {
+  height: 50px;
+  width: 180px;
+}
+
+.btnsBox {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+
+  &.isWaiter {
+    flex-direction: column;
+    @media screen and (min-width: 700px) {
+      flex-direction: row;
+    }
+  }
+}
+
+.btns {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.totalText {
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+}
+
+.text {
+  font-size: 18px;
+  margin-left: auto;
+  margin-right: auto;
+  color: var(--color-blue-dark);
+
+  @media screen and (min-width: 700px) {
+    font-size: 20px;
+  }
+}
+
+.checkboxes {
+  display: flex;
+  gap: 10px;
+  @media screen and (min-width: 700px) {
+    flex-direction: column;
+  }
+}
+
+.loader {
+  color: var(--color-status);
+  height: 100% !important;
+}

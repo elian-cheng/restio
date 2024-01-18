@@ -13,30 +13,32 @@ Our project aims to develop a comprehensive restaurant management app inspired b
 
 ## Front-End
 
-https://github.com/ets-ninja/et-front-23
+https://github.com/elian-cheng/restio.git
 
 ## Back-End
 
-https://github.com/ets-ninja/et-back-23
+https://github.com/elian-cheng/restio.git
 
 ## Install instructions:
 
 ### Front-End:
 
 ```bash
-1. git clone https://github.com/ets-ninja/et-front-23.git
-2. cd et-front-23
-3. npm i
-4. npm run start
+1. git clone https://github.com/elian-cheng/restio.git
+2. cd restio
+3. git checkout front
+4. npm i
+5. npm run start
 ```
 
 ### Back-End:
 
 ```bash
-1. git clone https://github.com/ets-ninja/et-back-23.git
-2. cd et-back-23
-3. npm i
-4. npm run start
+1. git clone https://github.com/elian-cheng/restio.git
+2. cd restio
+3. git checkout back
+4. npm i
+5. npm run start
 ```
 
 ### Used technologies

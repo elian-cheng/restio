@@ -1,0 +1,34 @@
+.topBox {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+  flex-direction: column;
+  margin-bottom: 20px;
+}
+
+.topBoxBtns {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+}
+
+.skeletonList {
+  display: grid;
+  gap: 10px;
+}
+
+.text {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.lastText {
+  margin-top: 20px;
+}
+
+.firstDish {
+  margin-top: 20px;
+  margin-left: auto;
+  margin-right: auto;
+}

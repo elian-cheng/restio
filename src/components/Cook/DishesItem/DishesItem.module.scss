@@ -1,0 +1,136 @@
+.item {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background-color: var(--color-white);
+  padding: 20px 10px;
+  border: 1px dashed rgb(212, 211, 211);
+  border-radius: 50px 50px 25px 25px;
+  border-radius: 20px;
+  width: 100%;
+
+  @media screen and (min-width: 768px) {
+    width: calc(50% - 10px);
+    padding: 20px;
+  }
+
+  @media screen and (min-width: 1250px) {
+    width: calc((100% - 40px) / 3);
+  }
+}
+
+.information {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 8px;
+  gap: 5px;
+
+  @media screen and (min-width: 768px) {
+    gap: 10px;
+  }
+
+  &__text {
+    font-size: 20px;
+    text-align: start;
+
+    @media screen and (min-width: 320px) and (max-width: 374px) {
+      font-size: 18px;
+    }
+
+    @media screen and (min-width: 375px) {
+      font-size: 24px;
+    }
+  }
+
+  &__quantity {
+    display: flex;
+    align-items: center;
+  }
+
+  &__timeSection {
+    display: flex;
+    gap: 5px;
+    align-items: center;
+  }
+
+  &__time {
+    background-color: var(--color-green-transparent);
+    width: 50px;
+    height: 50px;
+    padding: 5px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
+    @media screen and (min-width: 768px) {
+      width: 60px;
+      height: 60px;
+    }
+  }
+
+  &__time.active {
+    background-color: #ff000021;
+    animation-name: colorAnimation;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+  }
+
+  &__timeText {
+    font-size: 14px;
+
+    @media screen and (min-width: 375px) {
+      font-size: 16px;
+    }
+  }
+
+  &__order {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 26px;
+  }
+
+  &__data {
+    display: flex;
+    align-items: center;
+    gap: 3px;
+  }
+}
+
+.button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: auto;
+  margin-right: auto;
+
+  @media screen and (min-width: 768px) {
+    font-size: 1.1rem;
+  }
+}
+
+.comment {
+  height: 50px;
+
+  @media screen and (min-width: 320px) and (max-width: 374px) {
+    height: 50px;
+  }
+}
+
+@keyframes colorAnimation {
+  0% {
+    background-color: #ff000021;
+  }
+  25% {
+    background-color: #ff000033;
+  }
+  50% {
+    background-color: #ff000052;
+  }
+  100% {
+    background-color: #ff000068;
+  }
+}

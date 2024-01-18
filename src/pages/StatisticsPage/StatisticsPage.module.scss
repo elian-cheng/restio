@@ -1,0 +1,28 @@
+.main {
+  border-radius: 0.75rem;
+  flex: 1 1 auto;
+  padding: 1rem 1rem 3rem 1rem;
+  display: flex;
+  flex-direction: column;
+
+  @media screen and (min-width: 800px) {
+    padding: 1rem 5rem 3rem 5rem;
+  }
+}
+
+.span {
+  display: flex;
+  font-size: 20px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+
+.divider {
+  border-top: 8px solid var(--color-primary);
+  border-radius: 5px;
+  margin-top: 0.4rem;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}

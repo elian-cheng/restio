@@ -1,0 +1,68 @@
+.main__section {
+  padding: 2rem 15px;
+  transition: 1s;
+  width: 100%;
+
+  @media screen and (min-width: 1200px) {
+    padding: 1rem 100px;
+  }
+}
+
+.title {
+  text-align: left;
+}
+
+.divider {
+  border-top: 8px solid var(--color-primary);
+  border-radius: 5px;
+  margin-top: 0.4rem;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  margin-bottom: 30px;
+}
+
+.loader__section {
+  height: 100vh;
+}
+
+.button__section {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 46px;
+
+  @media screen and (min-width: 320px) and (max-width: 475px) {
+    gap: 10px;
+  }
+
+  @media screen and (min-width: 475.1px) and (max-width: 768.98px) {
+    gap: 20px;
+  }
+
+  @media screen and (min-width: 768px) {
+    justify-content: space-around;
+  }
+}
+
+.button {
+  @media screen and (min-width: 320px) and (max-width: 360.98px) {
+    font-size: 0.6rem;
+  }
+
+  @media screen and (min-width: 768px) {
+    font-size: 1.1rem;
+    padding: 1rem 3.5rem;
+  }
+}
+
+.button__section::after {
+  content: '';
+  position: absolute;
+  display: inline-block;
+  bottom: -24px;
+  left: 0;
+  width: 100%;
+  height: 5px;
+  background-color: var(--color-primary);
+  border-radius: 2.5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}

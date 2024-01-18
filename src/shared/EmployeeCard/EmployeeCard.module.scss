@@ -1,0 +1,133 @@
+@media (min-width: 120px) {
+  .card {
+    position: relative;
+    width: 100%;
+    transition: 1s;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    height: 100%;
+
+    &.outlined {
+      border: dashed 1px var(--color-light);
+      border-radius: 50px 50px 25px 25px;
+    }
+    &.sm {
+      width: 15%;
+    }
+    &.md {
+      width: 23%;
+    }
+  }
+
+  .card_image {
+    display: block;
+    position: relative;
+    margin: 0 auto;
+    bottom: -50px;
+    border-radius: 50%;
+    width: 170px;
+    height: auto;
+    object-fit: cover;
+    object-position: 25% 25%;
+    aspect-ratio: 16/16;
+    z-index: 1;
+  }
+
+  .employee_text {
+    padding: 4rem 2.3rem 1.2rem;
+    background-color: var(--color-white);
+    backdrop-filter: blur(42px);
+    border-radius: 25px;
+    border: 0 solid rgba(0, 0, 0, 0.125);
+    transition: 0.7s;
+    flex-grow: 1;
+  }
+
+  .trash {
+    position: absolute;
+
+    color: var(--color-primary);
+
+    top: 20px;
+    right: 15px;
+    margin-right: 20px;
+    &:hover,
+    &:focus {
+      color: var(--color-secondary);
+    }
+  }
+
+  .edit {
+    position: absolute;
+
+    color: var(--color-secondary);
+
+    bottom: 120px;
+    right: 10px;
+    z-index: 1;
+    margin-right: 20px;
+    &:hover {
+      color: var(--color-primary);
+    }
+  }
+}
+
+@media (min-width: 576px) {
+  .card {
+    position: relative;
+    width: 100%;
+    transition: 1s;
+  }
+
+  .trash {
+    top: 35px;
+    right: 5px;
+    &.sm {
+      right: 5px;
+    }
+  }
+
+  .edit {
+    bottom: 120px;
+    right: 5px;
+    &.sm {
+      right: 5px;
+    }
+  }
+}
+
+@media (min-width: 992px) {
+  .card {
+    position: relative;
+    width: 100%;
+    transition: 1s;
+  }
+
+  .card:hover .employee_text {
+    transition: 0.7s;
+    background-color: var(--color-light);
+    box-shadow: 10px 12px 51px -24px rgba(0, 0, 0, 0.52);
+  }
+
+  .outlined:hover {
+    transition: 0.7s;
+    box-shadow: 10px 12px 51px -24px rgba(0, 0, 0, 0.52);
+  }
+
+  .trash {
+    top: 35px;
+    right: 5px;
+    &:hover {
+      cursor: pointer;
+    }
+  }
+
+  .edit {
+    bottom: 120px;
+    right: 5px;
+    &:hover {
+      cursor: pointer;
+    }
+  }
+}

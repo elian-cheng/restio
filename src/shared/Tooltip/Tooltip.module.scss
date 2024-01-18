@@ -1,0 +1,26 @@
+.customTooltip {
+  position: relative;
+}
+
+.tooltipContent {
+  position: absolute;
+  background: var(--color-green-transparent);
+  color: var(--color-blue-dark);
+  font-weight: 700;
+  padding: 5px;
+  border-radius: 4px;
+  z-index: 100;
+  white-space: nowrap;
+  font-size: 14px;
+
+  &.top {
+    bottom: 105%;
+    left: 50%;
+    transform: translate(-50%);
+  }
+  &.left {
+    right: 104%;
+    bottom: 10%;
+    transform: translate(0%);
+  }
+}
